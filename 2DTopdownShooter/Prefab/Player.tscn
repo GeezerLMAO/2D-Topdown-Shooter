@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Art/Triangle.png" type="Texture" id=2]
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+dash_time = 0.2
+
+[node name="Graphics" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Graphics"]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 15.4325, 0.281584, -16, 16, -16, -16 )
