@@ -35,7 +35,7 @@ func _selectionchanged() -> void:
 			button_png.visible = true
 			tilemap = selected[0]
 			t_data.position = tilemap.get_used_rect().position
-			t_data.width = tilemap.get_used_rect().size.x
+			t_data.width = tilemap.get_used_rect().size.x + 5
 			t_data.height = tilemap.get_used_rect().size.y
 		else:
 			button_png.visible = false
